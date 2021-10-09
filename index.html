@@ -9,9 +9,6 @@
 </head>
 <body>
   <div class="form-container">
-    <div class="card-container">
-      
-    </div>
     <div class="card-number-container">
       <label for="card-number">Card Number</label>
       <input type="number" name="card-number" id="cardnumber">
@@ -57,11 +54,26 @@
         </select>
       </div>
       <div class="cw-container">
-        <span>CW</span>
+        <label for="cw">CW</label>
         <input type="number" name="cw" id="cw">
+        <div class="card-container">
+          <div class="card-front">
+            <div class="logo">
+              <img src="images/chip.png" alt="">
+              <img src="images/visa.png" alt="">
+            </div>
+            <label class="card-number"></label>
+            <div class="full-name-month-year">
+              <label class="full-name">#### #### #### ####</label>
+              <label class="month-year"></label>
+            </div>
+          </div>
+          <div class="card-back"></div>
+        </div>
       </div>
     </div>
     <input class="submit-button" type="submit" value="Submit">
+
   </div>
 
   <script src="main.js"></script>
