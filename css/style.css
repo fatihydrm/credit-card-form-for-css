@@ -185,10 +185,12 @@ body {
 
 .form-container .date-container .cw-container .card-container .card-front {
   background-image: url(../images/bg.jpg);
+  background-size: cover;
   transform: perspective(1200px) rotateY(0deg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  filter: brightness(70%);
 }
 
 .form-container .date-container .cw-container .card-container .card-front .logo {
@@ -298,8 +300,57 @@ body {
 .form-container .date-container .cw-container .card-container .card-back {
   background-image: url(../images/bg2.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   transform: perspective(1200px) rotateY(180deg);
-  background-position: -200px 0px;
+  display: flex;
+  flex-direction: column;
+  filter: brightness(70%);
+}
+
+.form-container .date-container .cw-container .card-container .card-back .card-top {
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 36px;
+  margin-bottom: 10px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .cw-container-2 {
+  width: 94%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 13px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .cw-container-2 span {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 6px;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .cw-container-2 .cw-box {
+  width: 100%;
+  height: 46px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .logo {
+  display: flex;
+  width: 94%;
+  justify-content: flex-end;
+  margin: 0 14px;
+  margin-top: 30px;
+}
+
+.form-container .date-container .cw-container .card-container .card-back .logo img {
+  width: 80px;
+  margin-right: 4px;
+  opacity: .8;
 }
 
 .form-container .submit-button {

@@ -163,11 +163,12 @@ body{
         }
         .card-front{
           background-image: url(../images/bg.jpg);
+          background-size: cover;
           transform: perspective(1200px) rotateY(0deg);
           background-repeat: no-repeat;
           display: flex;
           flex-direction: column;
-          
+          filter: brightness(70%);
           .logo{
             width: 100%;
             height: 50px;
@@ -176,9 +177,9 @@ body{
             margin-top: 26px;
             padding: 0 26px;
             align-items: center;
+            
             img{
               height: 100%;
-
               &:nth-of-type(2){
                 height: 46px;
               }
@@ -269,8 +270,51 @@ body{
         .card-back{
           background-image: url(../images/bg2.jpg);
           background-repeat: no-repeat;
+          background-size: cover;
           transform: perspective(1200px) rotateY(180deg);
-          background-position: -200px 0px;
+          display: flex;
+          flex-direction: column;
+          filter: brightness(70%);
+          .card-top{
+            width: 100%;
+            height: 50px;
+            background: rgba(0, 0, 0, .8);
+            margin-top: 36px;
+            margin-bottom: 10px;
+          }
+          .cw-container-2{
+            width: 94%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 0 13px;
+            span{
+              font-size: 20px;
+              color: #fff;
+              margin-right: 6px;
+              font-size: 18px;
+              margin-bottom: 4px;
+            }
+            .cw-box{
+              width: 100%;
+              height: 46px;
+              background: #fff;
+              border-radius: 4px;
+            }
+          }
+          .logo{
+            display: flex;
+            width: 94%;
+            justify-content: flex-end;
+            margin: 0 14px;
+            margin-top: 30px;
+            img{
+              width: 80px;
+              margin-right: 4px;
+              opacity: .8;
+            }
+          }
         }
       }
     }
