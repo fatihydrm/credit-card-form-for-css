@@ -62,10 +62,19 @@
               <img src="images/chip.png" alt="">
               <img src="images/visa.png" alt="">
             </div>
-            <label class="card-number"></label>
+            <input type="radio" name="radio" id="card-number">
+            <label for="card-number" class="card-number">#### #### #### ####</label>
             <div class="full-name-month-year">
-              <label class="full-name">#### #### #### ####</label>
-              <label class="month-year"></label>
+              <input type="radio" name="radio" id="full-name">
+              <label for="full-name" class="full-name">
+                <span>Card Holder</span>
+                <p>FULL NAME</p>
+              </label>
+              <input type="radio" name="radio" id="month-year">
+              <label for="month-year" class="month-year">
+                <span>Expires</span>
+                <p>MM / YY</p>
+              </label>
             </div>
           </div>
           <div class="card-back"></div>

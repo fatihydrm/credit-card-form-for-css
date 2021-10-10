@@ -36,6 +36,17 @@ body {
   box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-container input[type="number"],
+.form-container input[type="text"] {
+  transition: .2s;
+}
+
+.form-container input[type="number"]:focus,
+.form-container input[type="text"]:focus {
+  border: 2px solid #2364d2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 .form-container input {
   border: 2px solid #ccc;
 }
@@ -103,6 +114,12 @@ body {
   cursor: pointer;
 }
 
+.form-container .date-container .month-container select:focus,
+.form-container .date-container .year-container select:focus {
+  border: 2px solid #2364d2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 .form-container .date-container .month-container span {
   font-size: 13px;
   color: #333;
@@ -123,6 +140,11 @@ body {
   width: 150px;
   font-size: 18px;
   color: #333;
+}
+
+.form-container .date-container .cw-container input:focus {
+  border: 2px solid #2364d2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .form-container .date-container .cw-container input:focus + .card-container .card-front {
@@ -146,6 +168,7 @@ body {
   border-radius: 20px;
   top: -530px;
   left: -330px;
+  user-select: none;
 }
 
 .form-container .date-container .cw-container .card-container .card-front,
@@ -186,19 +209,90 @@ body {
   height: 46px;
 }
 
-.form-container .date-container .cw-container .card-container .card-front .full-name {
-  display: flex;
+.form-container .date-container .cw-container .card-container .card-front input[type="radio"] {
+  display: none;
+}
+
+.form-container .date-container .cw-container .card-container .card-front input[type="radio"]:checked + label {
   background: rgba(0, 0, 0, 0.3);
   border: .1em solid #fff;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .card-number {
+  display: flex;
+  background: transparent;
+  border: .1em solid transparent;
   border-radius: 4px;
   color: #fff;
   align-items: center;
   justify-content: center;
   width: 380px;
   height: 46px;
-  margin: 40px 20px;
+  margin: 30px 20px;
   font-size: 25px;
   word-spacing: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .full-name {
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin-right: 10px;
+  padding: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: .1em solid transparent;
+  transition: .2s;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .full-name span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .full-name p {
+  font-size: 18px;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .month-year {
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: .1em solid transparent;
+  transition: .2s;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .month-year span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.form-container .date-container .cw-container .card-container .card-front .full-name-month-year .month-year p {
+  font-size: 18px;
 }
 
 .form-container .date-container .cw-container .card-container .card-back {
